@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+   {{ title }}!
+  </h1>
+  <!--<img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  -->
+</div>
+
+<body ng-app>
+
+  <!-- The navigation menu will get the value of the "active" variable as a class.
+     The $event.preventDefault() stops the page from jumping when a link is clicked. -->
+
+  <nav class="{{active}}" ng-click="$event.preventDefault()">
+
+    <!-- When a link in the menu is clicked, we set the active variable -->
+
+    <a href="/" class="home" ng-click="active='home'">Home</a>
+
+    <a href="/about" class="about" ng-click="active='about'">About Us</a>
+    <a href="/contact" class="contact" ng-click="active='contact'">Contact US</a>
+    <a href="/products.html" class="products" ng-click="active='products'">products</a>
+
+  </nav>
+  
+  <!-- ng-show will show an element if the value in the quotes is truthful,
+     while ng-hide does the opposite. Because the active variable is not set
+     initially, this will cause the first paragraph to be visible. -->
+
+  <p ng-show="active">You chose <b>{{active}}</b></p>
+
+  <!-- Include AngularJS from Google's CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+
+</body>
+
+

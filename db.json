@@ -1,0 +1,40 @@
+{
+	"products": 
+	[
+		{
+			"product_id": 1,
+			"product_name" : "Product 1",
+			"product_desc" : " The greatest Wiz Bang, since slice bread.",
+			"price": 21.99,
+			"zip_code": 33323
+		},
+		{
+			"product_id": 1,
+			"product_name" : "Product 1",
+			"product_desc" : " The greatest Wiz Bang, since slice bread.",
+			"price": 27.99,
+			"zip_code": 33333
+		},
+		{
+			"product_id": 2,
+			"product_name" : "Product 1",
+			"product_desc" : " The greatest Wiz Bang, since slice bread.",
+			"price": 35.99,
+			"zip_code": 33323
+		},
+		{
+			"product_id": 2,
+			"product_name" : "Product 1",
+			"product_desc" : " The greatest Wiz Bang, since slice bread.",
+			"price": 45.99,
+			"zip_code": 33333
+		},
+		{
+			"product_id": 3,
+			"product_name" : "Product 1",
+			"product_desc" : " The greatest Wiz Bang, since slice bread.",
+			"price": 9.99,
+			"zip_code": 33323
+		}
+	]
+}
